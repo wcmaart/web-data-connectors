@@ -25,7 +25,7 @@
             // Iterate over the JSON object
             for (var i = 0, len = feat.length; i < len; i++) {
                 tableData.push({
-                    "eventId": feat[i].Events.eventId
+                    "eventId": feat[i].eventId
                 });
             }
     
