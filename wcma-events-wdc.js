@@ -5,6 +5,15 @@
         var cols = [{
             id: "eventId",
             dataType: tableau.dataTypeEnum.string
+        }, {
+            id: "eventName",
+            dataType: tableau.dataTypeEnum.string
+        }, {
+            id: "startDate",
+            dataType: tableau.dataTypeEnum.string
+        }, {
+            id: "description",
+            dataType: tableau.dataTypeEnum.string
         
         }];
     
@@ -25,7 +34,10 @@
             // Iterate over the JSON object
             for (var i = 0, len = feat.length; i < len; i++) {
                 tableData.push({
-                    "eventId": feat[i].eventId
+                    "eventId": feat[i].eventId,
+                    "eventName": feat[i].eventName,
+                    "startDate": feat[i].startDate,
+                    "description": feat[i].description
                 });
             }
     
