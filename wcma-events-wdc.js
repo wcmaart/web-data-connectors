@@ -5,20 +5,12 @@
         var cols = [{
             id: "eventId",
             dataType: tableau.dataTypeEnum.string
-        }, {
-            id: "eventName",
-            dataType: tableau.dataTypeEnum.string
-        }, {
-            id: "subject",
-            dataType: tableau.dataTypeEnum.string
-        }, {
-            id: "startDate",
-            dataType: tableau.dataTypeEnum.string
+        
         }];
     
         var tableSchema = {
             id: "eventsFeed",
-            alias: "Earthquakes with magnitude greater than 4.5 in the last seven days",
+            alias: "WCMA events",
             columns: cols
         };
     
@@ -33,10 +25,7 @@
             // Iterate over the JSON object
             for (var i = 0, len = feat.length; i < len; i++) {
                 tableData.push({
-                    "eventId": feat[i].Events.eventId,
-                    "eventName": feat[i].Events.eventName,
-                    "subject": feat[i].Events.subject,
-                    "startDate": feat[i].Events.startDate
+                    "eventId": feat[i].Events.eventId
                 });
             }
     
