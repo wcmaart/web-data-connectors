@@ -80,7 +80,6 @@
                     "startMonth": feat[i].startMonth,
                     "startDay": feat[i].startDay,
                     "dayOfTheWeek": feat[i].dayOfTheWeek,
-                    "terms": feat[i].terms.Term,
                     "relatedObjects": feat[i].relatedObjects.objectID
 
                 });
