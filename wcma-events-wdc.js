@@ -19,7 +19,7 @@
 
     myConnector.getData = function(table, doneCallback) {
         $.getJSON("https://raw.githubusercontent.com/wcmaart/collection/master/Events-utf8.json", function(resp) {
-            var feat = resp.features,
+            var feat = resp.Events,
                 tableData = [];
     
             // Iterate over the JSON object
