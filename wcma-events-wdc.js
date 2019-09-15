@@ -26,7 +26,7 @@
     };
 
     myConnector.getData = function(table, doneCallback) {
-        $.getJSON("https://github.com/wcmaart/collection/raw/master/Events-utf8.json", function(resp) {
+        $.getJSON("https://raw.githubusercontent.com/wcmaart/collection/master/Events-utf8.json", function(resp) {
             var feat = resp.features,
                 tableData = [];
     
