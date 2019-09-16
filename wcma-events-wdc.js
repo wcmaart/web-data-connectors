@@ -93,12 +93,9 @@
 
     tableau.registerConnector(myConnector);
 
-    // Create event listeners for when the user submits the form
-    $(document).ready(function() {
-        $("#submitButton").click(function() {
-            tableau.connectionName = "WCMA events2"; // This will be the data source name in Tableau
-            tableau.submit(); // This sends the connector object to Tableau
-        });
-    });
+    myConnector.init = function(initCallback) {
+        initCallback();
+        tableau.submit();
+    };
 
 })();
